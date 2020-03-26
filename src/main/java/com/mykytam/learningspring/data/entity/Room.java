@@ -8,36 +8,36 @@ public class Room {
     @Id // Annotation specifies the primary key of an entity
     @Column(name = "ROOM_ID")
     @GeneratedValue(strategy = GenerationType.AUTO) // Annotation provides for the specification of generation strategies for the values of primary keys.
-    private long roomId;
-    @Column(name = "NAME")
-    private String roomName;
-    @Column(name = "ROOM_NUMBER")
-    private String roomNumber;
-    @Column(name = "BED_INFO")
+    private long id;
+    @Column(name="NAME")
+    private String name;
+    @Column(name="ROOM_NUMBER")
+    private String number;
+    @Column(name="BED_INFO")
     private String bedInfo;
 
-    public long getRoomId() {
-        return roomId;
+    public long getId() {
+        return id;
     }
 
-    public void setRoomId(long roomId) {
-        this.roomId = roomId;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getRoomName() {
-        return roomName;
+    public String getName() {
+        return name;
     }
 
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getRoomNumber() {
-        return roomNumber;
+    public String getNumber() {
+        return number;
     }
 
-    public void setRoomNumber(String roomNumber) {
-        this.roomNumber = roomNumber;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public String getBedInfo() {
